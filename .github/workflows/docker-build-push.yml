@@ -102,7 +102,7 @@ jobs:
       if: ${{ needs.get-version-number.outputs.CONTINUE == 'Yes' }}
       
     - name: Push the ubuntu.2204 latest image
-      run: docker push octopuslabs/flyway-workertools:latest-ubuntu.2204
+      run: docker push octopuslabs/flyway-enterprise-workertools:latest-ubuntu.2204
       if: ${{ needs.get-version-number.outputs.CONTINUE == 'Yes' }}
       
   build-win-2019:
